@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+form {
+	margin-left: 10px;
+}
+
+label {
+	display: block;
+	padding:10px;
+    
+}
+input, select {
+	font-size:14px;
+	font:Verdana, Geneva, sans-serif;
+	width: 10em;
+	height: 20px;
+    float: right;
+    position: relative;
+}
+input[type="submit"]{
+    top: 10px; right: 10px;
+	height:40px;
+	border: solid #06C 2px;
+    background: lightBlue;
+}
+
+a:link, a {
+	text-decoration:none;
+	color:#069;
+}
+
+a:visited {
+  color: #06C;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	color: #039;
+}
+
+
+#mainContent h1 {
+	padding:0.8em;
+	font-size:1.3em;
+	text-align:center;
+}
+
+#mainContent h2 {
+	padding:0.4em;
+	font-size:1.2em;
+	text-align:center;
+}
+
+#mainContent {
+	font-size: 0.9em;
+}
+
+/* Template CSS */
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; 
+	padding: 0;
+	text-align: center; 
+	color: #000000;
+}
+#footer p {
+	text-align:center;
+	font-size:small;
+}
+.thrColFixHdr #container { 
+	width: 780px;
+	background: #FFFFFF;
+	margin: 0 auto;
+	border: 1px solid #000000;
+	text-align: left; 
+} 
+.thrColFixHdr #header { 
+	background: #DDDDDD; 
+	padding: 0 10px 0 20px; 
+} 
+.thrColFixHdr #header h1 {
+	margin: 0; 
+	padding: 10px 0;
+}
+.thrColFixHdr #sidebar1 {
+	float: left; 
+	width: 150px;
+	background: #EBEBEB; 
+	padding: 15px 10px 15px 20px; 
+}
+.thrColFixHdr #sidebar2 {
+	float: right; 
+	width: 160px; 
+	background: #EBEBEB; 
+	padding: 15px 10px 15px 20px; 
+}
+.thrColFixHdr #mainContent { 
+	margin: 0 200px; 
+	padding: 0 10px; 
+} 
+.thrColFixHdr #footer { 
+	padding: 0 10px 0 20px;
+	background:#DDDDDD;
+} 
+.thrColFixHdr #footer p {
+	margin: 0; 
+	padding: 10px 0; 
+}
+.fltrt { 
+	float: right;
+	margin-left: 8px;
+}
+.fltlft {
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}

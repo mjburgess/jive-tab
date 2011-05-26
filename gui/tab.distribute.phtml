@@ -1,0 +1,5 @@
+<div class="content-header"><h3>Room Distribution</h3></div>
+<?php foreach($rooms as $room): ?>
+    <h3><?php echo $room->getID(); ?></h3>
+    <?php echo nl2br($room); ?>
+<?php endforeach; ?>

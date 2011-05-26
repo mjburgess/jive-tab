@@ -1,0 +1,30 @@
+<?php if(isset($entry)) {
+	list($f,$s) = $entry->getSpeakers();
+		list($fn1, $ln1) = $f->getName(true);
+		list($fn2, $ln2) = $s->getName(true);
+} ?>
+
+<div class="content-header"><h3><?php echo  isset($entry) ? 'Edit' : 'Add'; ?> a Team</h3></div>
+<form id="form1" name="form1" method="post" action="">
+  <label>Name
+    <input type="text" name="name" id="name" value="<?php echo  isset($entry) ? $entry->getteamname() : ''; ?>"/>
+  </label>
+  <label>Representing
+    <input type="text" name="representing" id="representing" value="<?php echo  isset($entry) ? $entry->getrepresenting() : ''; ?>" />
+  </label>
+  <label>Spk1 First Name
+    <input type="text" name="firstName_1" id="firstName_1" value="<?php echo  isset($entry) ?  $fn1: ''; ?>" />
+  </label>
+  <label>Spk1 Last Name
+    <input type="text" name="lastName_1" id="lastName_1" value="<?php echo  isset($entry) ? $ln1 : ''; ?>" />
+  </label>
+    <label>Spk2 First Name
+    <input type="text" name="firstName_2" id="firstName_2" value="<?php echo  isset($entry) ? $fn2 : ''; ?>" />
+  </label>
+  <label>Spk2 Last Name
+    <input type="text" name="lastName_2" id="lastName_2" value="<?php echo  isset($entry) ? $ln2 : ''; ?>" />
+  </label>
+  <label>
+    <input type="submit" name="button" id="button" value="<?php echo  isset($entry) ? 'Edit' : 'Add'; ?>" />
+  </label>
+</form>

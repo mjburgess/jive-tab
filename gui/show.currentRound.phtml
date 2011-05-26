@@ -1,0 +1,29 @@
+<div id="currentRound">
+    <h1><?php echo $motion; ?></h1>
+<span class="roundPosition">Chaired by,</span>    <h2> <?php echo $room->getChair(); ?></h2>
+<span class="roundPosition">with wings,</span>    <h3>  <?php echo implode(', ', $room->getWings()); ?></h3>
+
+    <table>
+    <tr>
+        <td class="roundPosition">1st Prop</td>
+        <td><?php echo $teams[0]->getTeamName(); ?></td>
+        <td class="roundPosition">2nd Prop</td>
+        <td><?php echo $teams[1]->getTeamName(); ?></td>
+    </tr>
+    <tr>
+        <td class="roundPosition">1st Opp</td>
+        <td><?php echo $teams[2]->getTeamName(); ?></td>
+        <td class="roundPosition">2nd Opp</td>
+        <td><?php echo $teams[3]->getTeamName(); ?></td>
+    </tr>
+    </table>
+</div>
+<div id="navigation">
+<?php if($thisTeam > 0): ?>
+ ~ <a href="/?x=show_currentRound&r=<?php echo $thisRound - 1 ;?>">Prev Team</a>
+<?php endif; ?>
+
+<?php if($thisTeam  < ($numTeams/4) - 1): ?>
+ ~  <a href="/?x=show_currentRound&r=<?php echo $thisRound + 1 ;?>">Next Team</a>
+<?php endif; ?>
+</div>

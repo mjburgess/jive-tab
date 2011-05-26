@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Jive</title>
+    
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="css/frame/screen.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="css/frame/print.css" type="text/css" media="print" />
+    <!-- Site Specific CSS -->
+    <link rel="stylesheet" href="css/theme.css" type="text/css" media="screen, projection" />
+    <!--[if IE]><link rel="stylesheet" href="css/frame/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    
+    <script language="javascript" type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script language="javascript" type="text/javascript" src="js/ddsmoothmenu.js"></script>
+    <script type="text/javascript" src="facebox/facebox.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="facebox/facebox.css" />
+
+    <script type="text/javascript">
+		ddsmoothmenu.init({
+			mainmenuid: "smoothmenu1", //menu DIV id
+			orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+			classname: 'ddsmoothmenu', //class added to menu's outer DIV
+			contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+		})
+		
+	</script>
+        
+    <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta3)/IE9.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="headwrap">
+	<div class="container_12 header">
+        <div class="grid_8 logo">
+        	<h1>Jive</h1>
+            <p class="viewsite"><a href="http://www.leedsdebatingunion.com/jive">Get Jive</a></p>
+        </div><!--/logo-->
+        
+        <div class="grid_4 last h-details">
+        	<div class="logged-in">
+            	<a href="/?x=auth_logout" class="logout">Logout</a>
+                Logged in as <a href="/?x=auth_who&me=you">Username</a>
+            </div><!--/logged-in-->
+        </div><!--/hdetails-->
+        <div class="container_12 nav">
+        	<div id="smoothmenu1" class="ddsmoothmenu">
+                <ul>
+					<li><a href="#">@</a>
+                      <ul>
+                      <li><a href="/?x=tab_test">Test</a></li>
+                      <li><a href="/?x=tab_speaks">Tab Speaks</a></li>
+                      <li><a href="/?x=tab_publish">Publish Tab</a></li>
+                      <li><a href="/?x=tab_option">Options</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="/?x=home_index">Home</a></li>
+                    <li><a href="#">Help</a>
+                      <ul>
+                      <li><a href="/?x=home_walkthru">Walk Through</a></li>
+                      <li><a href="/?x=home_checklist">Check List</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Rooms</a>
+                      <ul>
+                      <li><a href="/?x=rooms_add">Add Room</a></li>
+                      <li><a href="/?x=rooms_edit">Manage</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Teams</a>
+                      <ul>
+                      <li><a href="/?x=teams_add">Add Team</a></li>
+                      <li><a href="/?x=teams_edit">Manage</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Adjudicators</a>
+                      <ul>
+                      <li><a href="/?x=adjudicators_add">Add Judge</a></li>
+                      <li><a href="/?x=adjudicators_edit">Manage</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Staff</a>
+                      <ul>
+                      <li><a href="/?x=staff_add">Add Staff</a></li>
+                      <li><a href="/?x=staff_edit">Manage</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Schedule</a>
+                      <ul>
+                      <li><a href="/?x=schedule_add">Add an Event</a></li>
+                      <li><a href="/?x=schedule_edit">Manage</a></li>
+                      </ul>
+                    </li>
+                </ul>
+                <br style="clear: left" />
+          	</div>
+        </div><!--/nav-->
+    </div><!--/header-->
+</div><!--/headwrap-->
+
+<div class="main">
+    <div class="container_12">
+    	<div class="grid_12">
+        	<div class="welcome">
+            	<div class="grid_5 alpha">
+                    <h2>Jive Admin Interface</h2>
+                </div>
+                
+                <div class="grid_7 omega">
+                	<p>Check the Help menu if you're stuck and read the walkthrough if you're new!<br /> 
+                    <strong>Jive is simple, powerful self-contained tabbing software, </strong> 
+                    <a href="#quickedit" rel="facebox">About Jive.</a></p>
+                </div>
+            </div><!--/welcome-->
+            
+            <ul class="toolbar">
+            	<li class="grid_2 alpha">
+                	<a href="/?x=teams_reg">
+                        <img src="images/icons/toolbar-1-trans.png" alt="Button Name" />
+                        <span>Registration</span>
+                    </a>
+                    
+                    <div id="quickedit" style="display:none;">
+                    	<h3>About Jive</h3>
+                        <p>Jive was created as a single-interface online IV system. 
+                        It manages the scheudle, staff, events as well as the tab, rooms, rounds and judges.
+                        The software is hosted online so rooms with internet access can instantly cast their ballot, 
+                        speeding up the IV dramatically. 
+                        JIV was first written by the Director of Training at Leeds Debate Union, Michael Burgess, for Leeds IV 2011.
+                        </p>
+                    </div>
+                </li>
+                
+                <li class="grid_2">
+                	<a href="/?x=show_currentRound">
+                        <img src="images/icons/toolbar-2-trans.png" alt="Button Name" />
+                        <span>Show</span>
+                    </a>
+                </li>
+                
+                <li class="grid_2">
+                	<a href="/?x=tab_speaks">
+                        <img src="images/icons/toolbar-3-trans.png" alt="Button Name" />
+                        <span>Tab</span>
+                    </a>
+                </li>
+                
+                <li class="grid_2">
+                	<a href="/?x=show_schedule">
+                        <img src="images/icons/toolbar-4-trans.png" alt="Button Name" />
+                        <span>Schedule</span>
+                    </a>
+                </li>
+                
+                <li class="grid_2">
+                	<a href="/?x=tab_publish">
+                        <img src="images/icons/toolbar-5-trans.png" alt="Button Name" />
+                        <span>Publish Tab</span>
+                    </a>	
+                </li>
+                
+                <li class="grid_2 omega">
+                	<a href="/?x=home_checklist">
+                        <img src="images/icons/toolbar-6-trans.png" alt="Button Name" />
+                        <span>Check List</span>
+                    </a>
+                </li>
+            </ul><!--/toolbar-->
+            
+            <div class="grid_3 sidebar alpha">
+            		<div class="content-box">
+                    	<div class="content-header">
+                        	<h3>Show</h3>
+                        </div><!--/content-header-->
+                    
+                    	<h4>IV Information</h4>
+                        <ul>
+                        	<li><a href="/?x=show_register">Register</a></li>
+                        	<li><a href="/?x=show_schedule">Schedule</a></li>
+                        	<li><a href="/?x=show_staffList">Staff List</a></li> 
+                        	<li><a href="/?x=show_bpp">BPP Rules</a></li> 
+                        	<li><a href="/?x=show_mtypes">Motion Types</a></li> 
+                        </ul>
+                        
+                        <h4>Current Round</h4>
+                        <ul>
+							<li><a href="/?x=show_currentInfo">Info Slide</a></li> 
+							<li><a href="/?x=show_currentRound">Rooms</a></li> 
+                        </ul>
+                        
+	                   <h4>Previous Rounds</h4>
+                        <ul>
+							<li>1 <a href="/?x=show_roundInfo&r=1">Info Slide</a> - 
+							<a href="/?x=show_roundRooms&r=1">Rooms</a></li> 
+                        </ul>
+                    </div><!--/content-box-->
+            </div><!--/sidebar-->
+            
+            <div class="grid_9 content omega">                <?php list($cls, $msg) = \J\IV\Master::flash(); if($cls) : ?>
+                    <div class="<?php echo $cls;?>"><?php echo $msg; ?></div>
+                <?php endif; ?>
+                
+                <div class="content-box">                    
+                <?php echo $_contents; ?>
+                </div><!--/content-box-->
+            </div><!--/content-->
+    	</div><!--/grid-12-->
+        
+        <div class="clear"></div>
+    
+    </div><!--/container-->
+</div><!--/main-->
+
+<div class="container_12 footer">
+    <div class="grid_10 alpha">
+    	<p>Written by Michael Burgess for Leeds Debate Union. Copyright 2011.</p>
+    </div>
+</div><!--/footer-->
+</body>
+</html>

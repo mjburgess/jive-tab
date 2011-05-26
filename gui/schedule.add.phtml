@@ -1,0 +1,28 @@
+<div class="content-header"><h3><?php echo  isset($entry) ? 'Edit' : 'Add'; ?> an Event</h3></div>
+<form id="form1" name="form1" method="post" action="">
+  <label>Name
+    <input type="text" name="name" id="name" value="<?php echo  isset($entry) ? $entry->getname() : ''; ?>" />
+  </label>
+  <label>Type
+    <select name="type">
+        <option value="round" <?php echo isset($entry) && $entry->gettype()    == 'round' ? 'selected="selected"'    : ''; ?>>Round</option>
+        <option value="break" <?php echo isset($entry) && $entry->gettype()    == 'break' ? 'selected="selected"'    : ''; ?>>Break</option>
+        <option value="workshop" <?php echo isset($entry) && $entry->gettype() == 'workshop' ? 'selected="selected"' : ''; ?>>Workshop</option>
+        <option value="other" <?php echo isset($entry) && $entry->gettype()    == 'other'    ? 'selected="selected"' : ''; ?>>Other</option>
+    </select>
+  </label>
+  <label>Location
+    <input type="text" name="location" id="location" value="<?php echo  isset($entry) ? $entry->getlocation() : ''; ?>" />
+  </label>
+  <label>Time*
+    <input type="text" name="time" id="time" value="<?php echo  isset($entry) ? $entry->gettime() : ''; ?>" />
+  </label>
+
+<p>
+*eg. 1pm, 21:00, 10am wednesday. Use day name if competition spans multiple days.
+</p>
+
+  <label>
+    <input type="submit" name="button" id="button" value="<?php echo  isset($entry) ? 'Edit' : 'Add'; ?>" />
+  </label>
+</form>

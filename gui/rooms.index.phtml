@@ -1,0 +1,6 @@
+<div class="content-header"><h3>Index</h3></div>
+<ol>
+<?php foreach($rooms as $room): ?>
+    <li><?php echo $room->getID() . ' at ' . $room->getLocation(); ?></li>
+<?php endforeach; ?>
+</ol>

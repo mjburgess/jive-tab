@@ -1,0 +1,7 @@
+<div class="content-header"><h3>Editing</h3></div>
+<ol>
+<?php foreach($rooms as $room): ?>
+    <li><?php echo $room->getID(); ?> -  <a href="/?x=rooms_edit&delete=<?php echo $room->getID(); ?>">delete</a> |
+    									 <a href="/?x=rooms_add&edit=<?php echo $room->getID(); ?>">edit</a></li>
+<?php endforeach; ?>
+</ol>

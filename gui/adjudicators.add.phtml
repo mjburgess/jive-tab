@@ -1,0 +1,18 @@
+<?php if(isset($entry)) { list($fn, $ln) = $entry->getName(true); } ?> 
+
+<div class="content-header"><h3><?php echo  isset($entry) ? 'Edit' : 'Add'; ?> an Adjudicator</h3></div>
+<form id="form1" name="form1" method="post" action="">
+  <label>First Name
+    <input type="text" name="firstName" id="firstName" value="<?php echo  isset($entry) ? $fn : ''; ?>" />
+  </label>
+  <label>Last Name
+    <input type="text" name="lastName" id="lastName" value="<?php echo  isset($entry) ? $ln: ''; ?>" />
+  </label>
+  <label>University
+    <input type="text" name="university" id="university" value="<?php echo  isset($entry) ? $entry->getUniversity() : ''; ?>" />
+  </label>
+  <label>Rank
+    <input type="text" name="rank" id="rank" value="<?php echo  isset($entry) ? $entry->getrank() : ''; ?>" />
+  </label>
+  <input type="submit" name="button" id="button" value="<?php echo  isset($entry) ? 'Edit' : 'Add'; ?>" />
+</form>

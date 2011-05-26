@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Jive</title>
+    
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="css/frame/screen.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="css/frame/print.css" type="text/css" media="print" />
+    <!-- Site Specific CSS -->
+    <link rel="stylesheet" href="css/theme.css" type="text/css" media="screen, projection" />
+    <!--[if IE]><link rel="stylesheet" href="css/frame/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    
+    <script language="javascript" type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta3)/IE9.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="headwrap">
+	<div class="container_12 header">
+        <div class="grid_8 logo">
+        	<h1>Jive</h1>
+        </div><!--/logo-->
+        
+        <div class="grid_4 last h-details">
+        
+        </div><!--/hdetails-->
+        <div class="container_12 nav">
+        	<h2 style="text-align:center; color:white"><?php echo $_heading; ?></h2>
+        </div><!--/nav-->
+    </div><!--/header-->
+</div><!--/headwrap-->
+
+<div class="main">
+    <div class="container_12">
+    	<div class="grid_12">
+        	<div class="welcome">
+            	<div class="grid_5 alpha">
+                    <h2>Leeds IntraV 2011</h2>
+                </div>
+                
+                <div class="grid_7 omega">
+                	<p><?php echo $_convenor; ?> Convening.<br /> 
+                    <strong>Chief Adjudicator: <?php echo $_ca; ?>, Deputies: <?php echo $_dcas; ?>. </strong></p>
+                </div>            </div><!--/welcome-->
+            
+            <?php echo $_contents; ?>
+        
+        <div class="clear"></div>
+    
+    </div><!--/container-->
+</div><!--/main-->
+
+<div class="container_12 footer">
+    <div class="grid_10 alpha">
+    	<p>Jive. Written by Michael Burgess for Leeds Debate Union. Copyright 2011.</p>
+    </div>
+</div><!--/footer-->
+</body>
+</html>

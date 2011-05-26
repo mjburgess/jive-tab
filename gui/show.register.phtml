@@ -1,0 +1,27 @@
+<script type="text/javascript">
+function reg(row) {
+    if(row.className != 'on') {
+	    row.className = 'on';
+		row.style.color = 'green';
+    } else {
+        row.className = 'off';
+		row.style.color = 'red';
+    }
+}
+</script>
+            <ul class="toolbar">
+            <h1>We are now Checking Attendance</h1>
+			<h2>Please Pay Attention (and Get Your Team Mates Here)</h2>
+            </ul><!--/toolbar-->
+            
+            <div class="grid_9 content omega">
+            	<div class="content-box" style="width:125%">
+                	<div class="content-header">
+                    	<h3>Teams</h3>
+                    </div>
+                    <?php foreach($teams as $team): ?>
+	                    <h2 onclick="reg(this)" style="color:red"><td><?php echo $team->getTeamName(); ?></h2>
+                    <?php endforeach; ?>
+                </div><!--/content-box-->
+            </div><!--/content-->
+    	</div><!--/grid-12-->

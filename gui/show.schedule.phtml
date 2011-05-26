@@ -1,0 +1,13 @@
+<div id="schedule">
+    <h1><?php echo $options['competitionName']; $r = 1; ?></h1>
+    <h2>Schedule</h2>
+    <ol>
+    <?php foreach($schedule as $name => $event):  ?>
+    <?php if($event->getType() == 'round') { $name = 'Round ' . $r++; } ?>
+    <li><?php echo $event->getTime(); ?> - <?php echo $name; ?> <p><?php echo $event->getLocation(); ?></p></li>
+    <?php endforeach; ?>
+    </ol>
+</div>
+<div id="navigation">
+    <a href="/?x=show_register">Next</a>
+</div>

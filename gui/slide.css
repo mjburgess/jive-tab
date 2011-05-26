@@ -1,0 +1,87 @@
+body {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    margin-left:7.5%;
+}
+
+#navigation {
+    position: absolute;
+    bottom: 15%;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    text-decoration: overline;
+}
+#footer {
+    font-size:small;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#register td {
+    padding: 3%;   
+}
+#currentRound, #start, #schedule h1 {
+    text-align: center;
+}
+#start h1 {
+    font-size: 500%;
+}
+#schedule h1 {
+    font-size: 400%;
+}
+#schedule h2 {
+    font-size: 250%;
+}
+#schedule p {
+    margin-left: 1em;
+}
+#schedule ol {
+    margin-left: 50px;
+    font-size: 150%;
+}
+#currentRound table {
+    position: relative;
+    top:5%;
+    font-size: 125%; 
+    margin-right: auto; 
+    margin-left: auto; 
+    text-align: left;
+}
+#currentRound table td {
+    padding: 2%;
+    width: 25%;
+}
+#currentRound .roundPosition {
+    font-size: 120%;
+    color: #666;
+    width: 15%;
+}
+
+h1 {
+    font-size: 150%;
+    padding: 0.1%;
+}
+
+h2 { 
+    font-size: 125%;
+    padding: 0.1%;
+}
+
+h3 {
+    font-size: 110%;
+    padding: 0.1%;
+}
+
+.on {
+    background-color: #80FF80;
+}
+
+.off {
+    background-color: red;
+}

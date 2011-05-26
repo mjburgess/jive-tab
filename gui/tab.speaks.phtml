@@ -1,0 +1,20 @@
+<div class="content-header"><h3>Speaks</h3></div>
+<form action="" method="post">
+<?php foreach($teams as $team): ?>
+<label><?php echo $team->getTeamName(); ?>
+<?php list($oneS, $twoS) = $team->getSpeakers(); 
+      $one = $oneS->getName();
+      $two = $twoS->getName();?>
+        <label><?php echo $one; ?> : (<?php echo $oneS->getAverageSpeaks(); ?>)
+            <input type="text" name="Speaks[<?php echo $team->getTeamName(); ?>1]" style="width: 25px;"/>
+        </label>
+        <label><?php echo $two; ?> : (<?php echo $twoS->getAverageSpeaks(); ?>)
+            <input type="text" name="Speaks[<?php echo $team->getTeamName(); ?>2]" style="width: 25px;"/>
+        </label>
+</label>
+<?php endforeach; ?>
+
+<label style="padding-bottom: 4em;">
+    <input type="submit" value="Save" style="top: 10px; right: 10px; height:40px; border: solid #06C 2px; background: lightBlue;">
+</label>
+</form>

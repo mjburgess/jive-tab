@@ -1,0 +1,15 @@
+
+<div class="content-header"><h3><?php echo  isset($entry) ? 'Edit' : 'Add'; ?> a Room</h3></div>
+
+<form id="Room" name="Room" method="post" action="">
+    <label>ID
+      <input type="text" name="id" id="id" value="<?php echo  isset($entry) ? $entry->getid() : ''; ?>" />
+    </label>
+    <label>
+      Location
+      <input type="text" name="location" id="location" value="<?php echo  isset($entry) ? $entry->getlocation() : ''; ?>" />
+    </label>
+    <label>
+      <input type="submit" name="submit" id="submit" value="<?php echo  isset($entry) ? 'Edit' : 'Add'; ?>" />
+    </label>
+</form>
